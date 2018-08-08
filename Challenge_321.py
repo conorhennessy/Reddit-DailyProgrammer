@@ -6,16 +6,12 @@ def talkingClock(time):
                     "eighteen ", "nineteen "]
     tens = ["oh ", "ten", "twenty ", "thirty ", "fourty ", "fifty"]
 
-
     if int(time[3]) == 0:
-        print('a')
         minute = tens[0] + ones[int(time[4])-1]
         if int(time[4]) == 0: minute = " "
     elif int(time[3:5]) <= 19:
-        print('b')
         minute = ones[int(time[3:5])]
     else:
-        print('c')
         if int(time[4]) == 0: minute = tens[int(time[3])]
         else: minute = tens[int(time[3])] + ones[int(time[4])-1]
 
@@ -29,8 +25,8 @@ def talkingClock(time):
         hour = ones[int(time[0:2]) - 13]
         meridiem = "pm"
 
+    return print("It's " + hour + minute + meridiem + "\n")
 
-    return print("It's " + hour + minute + meridiem)
 
 while True:
     time = input("Time input: ")
