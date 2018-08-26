@@ -30,6 +30,6 @@ public class Challenge_366_E {
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println(wordFunnel("aapple","apple"));
-        System.out.println(bonus("enable1.txt", "drsgoon"));
+        System.out.println(bonus("src/enable1.txt", "drsgoon"));
     }
 }
