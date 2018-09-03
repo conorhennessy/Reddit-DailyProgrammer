@@ -15,14 +15,14 @@ public class Challenge_366_E {
         return false;
     }
 
-    public static List<String> bonus(String fileName, String word) throws FileNotFoundException {
+    public static List<String> bonus(String fileName, String Word) throws FileNotFoundException {
         List<String> wordList = new ArrayList<>();
         Scanner input = new Scanner(new File(fileName));
         while (input.hasNextLine()){
             String cWord = input.nextLine();
-            for (int i = 0; i < cWord.length(); i++){
-                String newWord = cWord.substring(0, i) + cWord.substring(i + 1, cWord.length());
-                if (newWord.equals(word)) { wordList.add(word); }
+            for (int i = 0; i < Word.length(); i++){
+                String newWord = Word.substring(0, i) + Word.substring(i + 1, Word.length());
+                if (newWord.equals(cWord)) { wordList.add(cWord); }
             }
         }
         return wordList;
@@ -30,6 +30,6 @@ public class Challenge_366_E {
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println(wordFunnel("aapple","apple"));
-        System.out.println(bonus("src/enable1.txt", "drsgoon"));
+        System.out.println(bonus("src/enable1.txt", "boats"));
     }
 }
