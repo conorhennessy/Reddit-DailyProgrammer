@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Challenge_363 {
+public class Challenge_363_E {
     public static boolean check(String wordIn) {
         String word = wordIn.toLowerCase();
         /*if (!word.contains("ie")) {
