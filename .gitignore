@@ -18,12 +18,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# =========================
 # Operating System Files
-# =========================
-.idea/workspace.xml
-out/production/Reddit-DailyProgrammer/words.txt
-.idea/workspace.xml
-out/production/Reddit-DailyProgrammer/Challenge_366_E.class
-.idea/workspace.xml
-out/production/Reddit-DailyProgrammer/Challenge_366_E.class
+
+# Project files
+.idea/*
+out/*
